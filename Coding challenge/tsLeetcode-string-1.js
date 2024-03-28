@@ -81,6 +81,7 @@ function isCharPresent(input, x) {
     }
     return false;
 }
+;
 console.log(findWordsContaining(words, x));
 //2114. Maximum Number of Words Found in Sentences
 //https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description/
@@ -136,6 +137,7 @@ function checkPalindrome(a) {
     }
     return true;
 }
+;
 console.log(firstPalindrome(words1));
 //2125. Number of Laser Beams in a Bank
 //https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description/
@@ -158,7 +160,6 @@ function numberOfBeams(bank) {
             beams.push(count);
         }
     }
-    console.log(beams);
     var beamsLength = beams.length;
     var numberOfTotalBeams = 0;
     for (var j = 0; j < beamsLength - 1; j++) {
@@ -177,4 +178,33 @@ function countOfSecurityDevice(input) {
     }
     return count;
 }
+;
 console.log(numberOfBeams(bank));
+//2390. Removing Stars From a String
+//https://leetcode.com/problems/removing-stars-from-a-string/description/
+//You are given a string s, which contains stars *.
+//In one operation, you can:
+//Choose a star in s.
+//Remove the closest non-star character to its left, as well as remove the star itself.
+//Return the string after all stars have been removed.
+//Example 1:
+//Input: s = "leet**cod*e"
+//Output: "lecoe"
+var s = "leet**cod*e";
+function removeStars(s) {
+    var length = s.length;
+    var start = 0;
+    while (start < length) {
+        if (s.charAt(start) === '*') {
+            s = s.substring(0, start - 1) + s.substring(start + 1, length);
+            start -= 2;
+            length = length - 2;
+        }
+        else {
+            start++;
+        }
+    }
+    return s;
+}
+;
+console.log(removeStars(s));

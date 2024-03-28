@@ -188,3 +188,32 @@ function countOfSecurityDevice(input: string): number{
 };
 
 console.log(numberOfBeams(bank));
+
+
+//2390. Removing Stars From a String
+//https://leetcode.com/problems/removing-stars-from-a-string/description/
+//You are given a string s, which contains stars *.
+//In one operation, you can:
+//Choose a star in s.
+//Remove the closest non-star character to its left, as well as remove the star itself.
+//Return the string after all stars have been removed.
+//Example 1:
+//Input: s = "leet**cod*e"
+//Output: "lecoe"
+let s: string = "leet**cod*e";
+function removeStars(s: string): string {
+    let length: number = s.length;
+    let start = 0;
+    while(start < length){
+        if(s.charAt(start) === '*'){
+            s = s.substring(0, start-1) + s.substring(start+1, length);
+            start -= 2;
+            length = length-2;
+        }else{
+            start++;
+        }
+    }
+    return s;
+};
+
+console.log(removeStars(s));
