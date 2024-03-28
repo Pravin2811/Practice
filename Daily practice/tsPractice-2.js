@@ -2,6 +2,10 @@
 var arr;
 arr = ["Hello", 34, "welcome"];
 console.log(arr);
+var array1 = [3, 6, 2, 8, 9];
+console.log(array1.length);
+console.log(array1[2]);
+console.log(array1.find(function (e) { return e == 6; }));
 //Typescript Tuple
 var tuple = [0, 255, 255, 1];
 console.log(tuple);

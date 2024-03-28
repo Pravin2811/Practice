@@ -3,6 +3,10 @@ let arr: (string | number)[];
 arr = ["Hello", 34, "welcome"];
 console.log(arr);
 
+let array1: number[] = [3, 6, 2, 8, 9];
+console.log(array1.length);
+console.log(array1[2]);
+
 //Typescript Tuple
 let tuple: [number, number, number, number?] = [0, 255, 255, 1];
 console.log(tuple);
