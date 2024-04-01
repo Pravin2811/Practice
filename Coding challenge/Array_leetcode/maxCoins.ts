@@ -42,6 +42,6 @@ function ascSort(nums: number[], n: number): void{
             break;
         }
     }
-}
+};
 
 console.log(maxCoins(piles));
