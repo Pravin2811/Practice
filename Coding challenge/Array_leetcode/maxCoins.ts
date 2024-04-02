@@ -15,7 +15,7 @@ let piles: number[] = [9,8,7,6,5,1,2,3,4];
 function maxCoins(piles: number[]): number {
     let length: number = piles.length;
     let start: number = length / 3;
-    sort(piles, length);
+    ascSort(piles, length);
     let maxNoCoins: number = 0;
     for(let i=start; i<length; i=i+2){
         maxNoCoins += piles[i];
