@@ -3,8 +3,8 @@ let arr = [new Date(), new RegExp('\d+')];
 
 console.log(arr);
 
-function add(x: number, y: number){
+function addd(x: number, y: number){
     return "" + x + y + " ";
 }
 
-console.log(add(8, 10));
+console.log(addd(8, 10));
