@@ -40,3 +40,8 @@ console.log(getTotal(1));
 console.log(getTotal(10));
 console.log(getTotal(10, 20));
 console.log(getTotal(10, 20, 30, 40, 50));
+function sum(a, b, c) {
+    if (c)
+        return a + b + c;
+    return a + b;
+}
