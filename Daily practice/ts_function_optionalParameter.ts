@@ -1,16 +1,16 @@
 //Typescript function
-let add: (a: number, b: number) => number = 
+let addd: (a: number, b: number) => number = 
     function (x: number, y: number) {
         return x + y;
     }
 
-console.log(add(8, 4));
+console.log(addd(8, 4));
 
 //Typescript optional parameter functions
 function multiply(a: number, b: number, c?:number): number{
-    // if(c !== undefined){
-    //     return a*b*c;
-    // }
+    if(c !== undefined){
+        return a*b*c;
+    }
 
     return a*b;
 }
@@ -41,7 +41,7 @@ function getTotal( a: number, ...numbers: number[]): number{
     return total;
 }
 
-console.log(getTotal(1));
+console.log(getTotal(1,...[10,20]));
 console.log(getTotal(10));
 console.log(getTotal(10, 20));
 console.log(getTotal(10, 20, 30, 40, 50));
@@ -53,3 +53,11 @@ function sum(a: number, b: number, c?: number,): number {
     if (c) return a + b + c;
     return a + b;
 }
+
+
+
+function addAny(a: any, b: any): any {
+    return a + b;
+}
+ 
+console.log(addAny(5, 6))

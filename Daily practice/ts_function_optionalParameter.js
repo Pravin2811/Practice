@@ -1,13 +1,22 @@
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 //Typescript function
-var add = function (x, y) {
+var addd = function (x, y) {
     return x + y;
 };
-console.log(add(8, 4));
+console.log(addd(8, 4));
 //Typescript optional parameter functions
 function multiply(a, b, c) {
-    // if(c !== undefined){
-    //     return a*b*c;
-    // }
+    if (c !== undefined) {
+        return a * b * c;
+    }
     return a * b;
 }
 console.log(multiply(5, 4, 9));
@@ -36,7 +45,7 @@ function getTotal(a) {
     numbers.forEach(function (num) { return total += num; });
     return total;
 }
-console.log(getTotal(1));
+console.log(getTotal.apply(void 0, __spreadArray([1], [10, 20], false)));
 console.log(getTotal(10));
 console.log(getTotal(10, 20));
 console.log(getTotal(10, 20, 30, 40, 50));
@@ -45,3 +54,7 @@ function sum(a, b, c) {
         return a + b + c;
     return a + b;
 }
+function addAny(a, b) {
+    return a + b;
+}
+console.log(addAny(5, 6));
