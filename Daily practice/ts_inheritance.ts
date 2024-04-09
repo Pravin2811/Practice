@@ -1,6 +1,6 @@
 //Typescript Inheritance
-class Person{
-    protected firstName: string;
+class Person5{
+    firstName: string;
     protected lastName: string;
 
     constructor(firstName: string, lastName: string){
@@ -21,10 +21,10 @@ class Person{
     // }
 };
 
-let person1 = new Person("hari", "haran");
+let person5 = new Person5("hari", "haran");
 //console.log(person1.firstName);
 
-class Student extends Person{
+class Student2 extends Person5{
     age: number;
     degree: string;
 
@@ -48,8 +48,8 @@ class Student extends Person{
     }
 
     describe(): any{
-        return super.describe();
-        //return `This is ${this.firstName} ${this.lastName} ${this.age}`;
+        //return super.describe();
+        return `This is ${this.firstName} ${this.lastName} ${this.age}`;
     }
 }
 
@@ -57,5 +57,5 @@ class Student extends Person{
 // console.log(hari.getFullDetails());
 // console.log(hari.getLastName());
 // console.log(hari.age);
-let kumar = new Student("Ajay", "kumar", 23, "Diploma");
-console.log(kumar.describe());
+let kumarr = new Student2("Ajay", "kumar", 23, "Diploma");
+console.log(kumarr.describe());

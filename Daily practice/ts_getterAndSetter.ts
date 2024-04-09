@@ -1,5 +1,5 @@
 //Typescript getter and setter
-class Student{
+class Student1{
     _age;
     private _firstName;
     private _lastName;
@@ -21,6 +21,6 @@ class Student{
     }
 }
 
-let hari = new Student(24, "Hari", "haran");
+let hari = new Student1(24, "Hari", "haran");
 hari.age = 30;
 console.log(hari.age);

@@ -15,7 +15,7 @@
 //Typescript ES6 class definition
 
 
-class Person{
+class Person1{
     ssn: string;
     firstName: string;
     lastName: string;
@@ -41,7 +41,7 @@ class Person{
     }
 }
 
-let person = new Person("5435435", "Sylesh", "kumar", 15000);
+let person = new Person1("5435435", "Sylesh", "kumar", 15000);
 console.log(person.getFullName());
 console.log(person.ssn);
 //console.log(person.salary);
