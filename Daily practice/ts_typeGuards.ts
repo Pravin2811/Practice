@@ -1,13 +1,11 @@
 class Customer {
     isCreditAllowed(): boolean {
-        // ...
         return true;
     }
 }
 
 class Supplier {
     isInShortList(): boolean {
-        // ...
         return true;
     }
 }

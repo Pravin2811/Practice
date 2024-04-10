@@ -2,7 +2,6 @@ var Customer = /** @class */ (function () {
     function Customer() {
     }
     Customer.prototype.isCreditAllowed = function () {
-        // ...
         return true;
     };
     return Customer;
@@ -10,6 +9,9 @@ var Customer = /** @class */ (function () {
 var Supplier = /** @class */ (function () {
     function Supplier() {
     }
+    Supplier.prototype.isInShortList = function () {
+        return true;
+    };
     return Supplier;
 }());
 function signContract(partner) {
