@@ -30,3 +30,14 @@ for(let i of persons){
 
 console.log(persons);
 console.log(modArr)
+
+
+let arr = ["ere", "rfwfw", "sdfde", undefined];
+//arr[6] = "sdfd";
+console.log(arr.length);
+
+let str = "\uD38F\uD38F";
+console.log(str.length);
+
+let n: string = "";
+if(!n) console.log("n")

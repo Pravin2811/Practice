@@ -27,3 +27,11 @@ for (var _i = 0, persons_1 = persons; _i < persons_1.length; _i++) {
 }
 console.log(persons);
 console.log(modArr);
+var arr = ["ere", "rfwfw", "sdfde", undefined];
+//arr[6] = "sdfd";
+console.log(arr.length);
+var str = "\uD38F\uD38F";
+console.log(str.length);
+var n = "";
+if (!n)
+    console.log("n");
