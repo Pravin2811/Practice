@@ -35,3 +35,10 @@ console.log(str.length);
 var n = "";
 if (!n)
     console.log("n");
+var a = ['1', '2', '3', '4', '5', '6', '7', '8'];
+var b = a;
+b.push(b.splice(5, 1)[0]);
+var c = b.slice(3, -2);
+console.log(a);
+console.log(b);
+console.log(c);
