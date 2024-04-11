@@ -34,3 +34,26 @@ console.log("A pigeon " + pigeon.sound);
 console.log("An owl " + owl.sound); 
 console.log("A pigeon " + pigeon2.sound); 
 //console.log("A penguin " + penguin.sound);   
+
+
+let greet: (a: string, b: string) => string;
+    
+greet = function (x:string, y:string): string{
+    return x+y;
+}
+
+console.log(greet("1","3"));
+
+let employee: {
+    firstName: string;
+    lastName: string;
+    age: number;
+    jobTitle: string;
+} = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 25,
+    jobTitle: 'Web Developer'
+};
+
+console.log(Object.keys(employee));
