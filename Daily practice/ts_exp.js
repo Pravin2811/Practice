@@ -42,3 +42,7 @@ var c = b.slice(3, -2);
 console.log(a);
 console.log(b);
 console.log(c);
+var x = '32';
+var y = +x;
+console.log(y);
+console.log(typeof y, ',', typeof x);

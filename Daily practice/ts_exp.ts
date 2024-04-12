@@ -49,3 +49,8 @@ let c = b.slice(3, -2);
 console.log(a);
 console.log(b);
 console.log(c);
+
+const x = '32';
+const y = +x;
+console.log(y);
+console.log(typeof y, ',', typeof x);
