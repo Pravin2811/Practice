@@ -3,7 +3,8 @@ function columnNumber(input: string): number{
     const length: number = input.length;
     for(let i=0; i<length; i++){
         let value = input.charCodeAt(i);
-        if(value >= 65 && value <= 90){
+        const valueOfA = "A".charCodeAt(0);
+        if(value >= valueOfA && value <= (valueOfA + 25)){
             let result = value - 64;
             output = output * 26 + result;
         }else{
@@ -17,11 +18,11 @@ function columnNumber(input: string): number{
 // let maxStringInput = "FXSHRXW";
 // let maxOutput = columnNumber(maxStringInput);
 
-function columnNumberMax(input: string): number{
-    let maxStringInput = "FXSHRXW";
-    let maxOutput = columnNumber(maxStringInput);
-    let output = columnNumber(input);
-    return output <= maxOutput ? output : -1;
-}
+// function columnNumberMax(input: string): number{
+//     let maxStringInput = "FXSHRXW";
+//     let maxOutput = columnNumber(maxStringInput);
+//     let output = columnNumber(input);
+//     return output <= maxOutput ? output : -1;
+// }
 
-console.log(columnNumberMax("ZY"));
+console.log(columnNumber("ZY"));

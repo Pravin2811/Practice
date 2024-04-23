@@ -1,0 +1,78 @@
+<!-- <ng-container *ngTemplateOutlet="tmpl; context:{$implicit:product}">
+    <div *ngIf="true;else tmpl">GHHGHGHGH</div> 
+    laflakfakf
+</ng-container>
+
+<ng-template #tmpl let-text>
+    <div class="parent">
+        <div *ngFor="let item of text" class="sample">
+            <div *ngIf="item.Quantity !==0">
+            {{item.productName}}
+            {{item.Quantity}}
+            </div>
+        </div>
+    </div>
+</ng-template> -->
+
+
+<!-- <ng-container *ngTemplateOutlet="tmpl; context:{$implicit:product}"> -->
+    <!-- <div *ngIf="true;else tmpl">GHHGHGHGH</div>  -->
+    <!-- laflakfakf -->
+<!-- </ng-container> -->
+
+<!-- <ng-template #tmpl let-text> -->
+    <!-- <div class="parent"> -->
+        <!-- <div *ngFor="let item of text" class="parent"> -->
+            <!-- <div *ngIf="item.Quantity !==0" class="sample"> -->
+            <!-- {{item.productName}} -->
+            <!-- {{item.Quantity}} -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </ng-template> -->
+
+<!-- <ng-container *ngTemplateOutlet="tmpl; context:{$implicit:product}"> -->
+    <!-- <div class="grid-container"> -->
+        <!-- <div *ngIf="true;else tmpl">GHHGHGHGH</div>  -->
+        <!-- laflakfakf -->
+    <!-- </div> -->
+<!-- </ng-container> -->
+
+<!-- <ng-template #tmpl let-text> -->
+    <!-- <div class="grid-container"> -->
+        <!-- <div *ngFor="let item of text" class="grid-item" > -->
+            <!-- <div *ngIf="item.Quantity !== 0"> -->
+            <!-- {{item.productName}} -->
+            <!-- {{item.Quantity}} -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </ng-template> -->
+
+
+<div class="grid-container">
+    <ng-container *ngFor="let item of product">
+      <div class="card" *ngIf="item.available; else outOfStock">
+        <div class="card-content">
+          <p>{{ item.productName }} - Available</p>
+        </div>
+      </div>
+      <ng-template #outOfStock>
+        <div class="card out-of-stock">
+          <div class="card-content">
+            <p>{{ item.productName }} - Out of stock</p>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+</div>
+
+<div [ngClass]="{'blue':true}">
+    <p [ngStyle]="{'color': 'black','text-align':'center'}">QWERTY</p>
+</div>
+
+
+<p appExample>QEWEWYRUYIREY UOUOIRUEWOR ISJDLKASJDLKA YEWUREWRWOUOO</p>
+
+<p>{{ 670 | currency:'INR':'symbol' }}</p>
+<p>{{ 0.67 | percent }}</p>

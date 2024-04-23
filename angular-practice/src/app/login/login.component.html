@@ -1,0 +1,15 @@
+<div class="login">
+    <h1>Login</h1>
+    <div class="login-input-username">
+      Username: <input type="text" [(ngModel)]="username" onpaste="return false" oncopy="return false">
+    </div>
+    <div class="login-input-password">
+      Password: <input type="password" [(ngModel)]="password" onpaste="return false" oncopy="return false">
+    </div>
+    <div class="login-button">
+      <button type="button" (click)=" login()" id="btn">Login</button>
+    </div>
+</div>
+
+<!-- <input type="text" [value]="name"  (input)="onchange($event)">
+<p>{{name}}hhhhh</p> -->

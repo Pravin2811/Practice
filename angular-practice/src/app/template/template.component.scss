@@ -1,0 +1,106 @@
+// #parent{
+//     display: grid;
+//     grid-template-columns: repeat(4, minmax(0, 1fr));
+
+// }
+
+
+// .sample {
+//     margin: 20px;
+//     border-radius: 1rem;;
+//     background-color: black;
+//     color: white;
+//     // display: grid;
+//     // grid-template-columns: repeat(4, minmax(0, 1fr));
+//     width: 20%;
+//     text-align: center;
+// }
+
+
+
+// .parent{
+//     // display: flex;
+//     justify-content: center; 
+//     align-items: center; 
+// }
+
+// .sample {
+//     margin:50px auto;
+//     width: 10%;
+//     background-color: black;
+//     border-radius: 0.5rem;
+//     text-align: center;
+//     color:white;
+//     // display: inline-grid;
+//     // grid-column: 4;
+    
+// }
+// .parent{
+//     display: grid;
+//     grid-template-columns: repeat(4, minmax(0, 1fr));
+
+// }
+
+// .parent {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center; 
+//     // height: 100vh;
+// }
+
+// .sample {
+//     margin: 20px; 
+//     width: 200px; 
+//     height: 100px; 
+//     background-color: black;
+//     color: white;
+//     border-radius: 0.5rem;
+//     display: grid;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .grid-container {
+//     margin: 200px 200px;
+//     height: auto;
+//     display: grid;
+//     grid-template-columns: repeat(4,minmax(0, 1fr));
+//     // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width as needed */
+//     grid-gap: 50px; /* Adjust gap between grid items */
+// }
+
+// .grid-item {
+//     background-color: black;
+//     color: white;
+//     padding: 30px;
+//     border-radius: 5px;
+//     text-align: center;
+// }
+
+
+.grid-container {
+    //margin: auto 250px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 10px; 
+}
+  
+.card {
+    width: 80%;
+    background-color: gray; //rgba(0, 0, 150, 0.506);
+    height: auto;
+    border-radius: 10px;
+}
+  
+.card-content {
+    text-align: center;
+    padding: 20px;
+}
+  
+.out-of-stock {
+    background-color: burlywood;//rgba(150, 0, 0, 0.509); 
+}
+
+.blue {
+    background-color: blue;
+}
