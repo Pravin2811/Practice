@@ -1,0 +1,18 @@
+<h1>Reverse Phrase</h1>
+
+<div class="input-word">
+  <div>
+    <label>Word: </label>
+    <input [(ngModel)]="text" />
+  </div>
+
+<!-- Event Binding and Property Binding-->
+  <div class="button">
+    <button (click)="onClickReverse()" [disabled]="!text.length">Submit</button>
+  </div>
+</div>
+
+<!-- Interpolation and Diretives-->
+<div class="output" *ngIf="reversedText.length">
+  Reversed Text: {{reversedText}}
+</div>
