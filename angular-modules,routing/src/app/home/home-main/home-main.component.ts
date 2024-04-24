@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-main.component.scss']
 })
 export class HomeMainComponent {
-
+  title = "Hello"
 }
