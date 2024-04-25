@@ -1,0 +1,14 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Drink</th>
+      <th>Instructions</th>
+    </tr>
+  </thead>
+  <tbody style="width: 100%; border: 1px solid black;">
+    <tr *ngFor="let drink of drinks" >
+      <td>{{ drink.strDrink }}</td>
+      <td>{{ drink.strInstructions }}</td>
+    </tr>
+  </tbody>
+</table>

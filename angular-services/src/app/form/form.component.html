@@ -1,0 +1,17 @@
+<!-- <div class="card mt-3">
+    <div class="card-body">
+      <form class="input-group mb-3" > -->
+        <!-- <input type="text" class="form-control" (input)="query = $event.target.value"> -->
+        <!-- <input type="text" class="form-control" (input)="query = getValue($event)"> -->
+        <!-- <input type="text" class="form-control" (input)="onSubmit()" [(ngModel)]="query">
+        <div class="input-group-append">
+          <button class="btn btn-primary" (click)="onSubmit()">Search</button>
+        </div>
+      </form>
+    </div>
+</div> -->
+<form #formdata="ngForm" >
+  <input name="first" type="text" class="form-control" [(ngModel)]="query">
+  <button class="btn btn-primary" (click)="onSubmit()">Search</button>
+</form>
+    
