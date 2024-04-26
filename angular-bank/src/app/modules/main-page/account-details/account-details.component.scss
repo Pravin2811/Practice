@@ -1,0 +1,20 @@
+.account-container {
+    width: 550px;
+    height: 150px;
+    margin: 0 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+
+h2,.account-info, p {
+    margin:auto;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+  
+.account-info strong {
+    font-weight: bold;
+}
